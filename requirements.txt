@@ -1,0 +1,8 @@
+altair==5.2.0
+pandas==2.0.3
+Pillow==10.1.0
+Pillow==10.1.0
+PyYAML==6.0.1
+PyYAML==6.0.1
+streamlit==1.29.0
+streamlit_authenticator==0.2.3

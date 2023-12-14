@@ -1,0 +1,12 @@
+credentials:
+  usernames:
+    admin:
+      email:
+      name: admin
+      password: $2b$12$MRqxHcglMDuX43954laub.Tdq.yoH8kIMcxfnamYapmrfh0v77bKC # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: dash_signature_key # Must be string
+  name: dash_cookie_name
+preauthorized:
+  emails:
