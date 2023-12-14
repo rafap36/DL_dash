@@ -42,15 +42,18 @@ if authentication_status:
 
 
   # criar o dataframe
-  df = pd.read_excel(
-    io = './Datasets/base.xlsx',
-    engine = 'openpyxl',
-    sheet_name = 'base1',
-    usecols = 'A:I',
-    nrows = 200
-  )
+  @st.cache_resource
+  def busca_df():
+    df = pd.read_excel(
+      io = './Datasets/base.xlsx',
+      engine = 'openpyxl',
+      sheet_name = 'base1',
+      usecols = 'A:I',
+      nrows = 93
+    )
+    return df
 
-
+  df = busca_df()
 
   # criar o sidebar
   with st.sidebar:
